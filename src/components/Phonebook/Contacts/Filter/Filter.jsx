@@ -1,7 +1,8 @@
+import React from 'react';
+import PropTypes from 'prop-types';
 import { SearchInput } from 'components/Phonebook/Phonebook.styled';
 import { ContactsFieldWrapper } from './FilterWrapper';
 import { InputTitleContacts } from './Filter.styled';
-import PropTypes from 'prop-types';
 
 export const Filter = ({ value, changeFilter }) => {
   return (

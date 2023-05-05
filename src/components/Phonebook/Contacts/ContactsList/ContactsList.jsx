@@ -1,3 +1,4 @@
+import React from 'react';
 import { ContactItem } from './ContactsItem/ContactsItem';
 import PropTypes from 'prop-types';
 
