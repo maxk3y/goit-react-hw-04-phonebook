@@ -19,9 +19,9 @@ export function ContactForm({ changeContactList }) {
     setNumber(e.target.value);
   };
 
-  const resetForm = evt => {
-    evt.target.elements.name.value = '';
-    evt.target.elements.number.value = '';
+  const resetForm = e => {
+    e.target.elements.name.value = '';
+    e.target.elements.number.value = '';
     setName('');
     setNumber('');
   };
@@ -29,7 +29,7 @@ export function ContactForm({ changeContactList }) {
   const handleFormSubmit = e => {
     e.preventDefault();
     changeContactList({ name, number });
-    resetForm(evt);
+    resetForm(e);
   };
 
   return (
