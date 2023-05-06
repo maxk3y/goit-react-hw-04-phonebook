@@ -22,6 +22,7 @@ export function ContactForm({ changeContactList }) {
   const handleFormSubmit = e => {
     e.preventDefault();
     changeContactList({ name, number });
+    resetForm(evt);
   };
 
   return (
